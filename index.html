@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruach Marshallese Full Gospel Church | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home" onclick="showPage('home')">
+                        <i><i class="fa-solid fa-church"></i></i>
+                        <span>Ruach Marshallese Full Gospel Church</span>
+                    </a>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" onclick="showPage('home')" class="active">Home</a></li>
+                    <li><a href="#about" onclick="showPage('about')">About Us</a></li>
+                    <li><a href="#ministries" onclick="showPage('ministries')">Ministries</a></li>
+                    <li><a href="#events" onclick="showPage('events')">Events</a></li>
+                    <li><a href="#resources" onclick="showPage('resources')">Resources</a></li>
+                    <li><a href="#news" onclick="showPage('news')">News</a></li>
+                    <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+                    <li><a href="#" id="adminLoginLink" style="color: #e74c3c; font-weight: bold;">
+                        <i class="fas fa-user-shield"></i> Admin
+                    </a></li>
+
+                </ul>
+                
+                <button class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+            
+        </div>
+    </header>
+
+    <!-- ===== HOME PAGE ===== -->
+    <div id="home" class="page-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Ruach Marshallese Full Gospel Church</h1>
+                <p>Where Faith, Family, and Fellowship Come Together</p>
+                <div class="hero-buttons">
+                    <a href="#service-times" onclick="showPage('home')" class="btn btn-light">Join Us This Sunday</a>
+                    <a href="https://www.youtube.com" class="btn btn-outline">Watch Online</a>
+                </div>
+            </div>
+        </section>
+        <!-- Recent News (Add to Homepage) -->
+        <section class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Latest News</h2>
+                <div class="news-preview" id="homeNews">
+                    <div class="loading-news">
+                        <i class="fas fa-spinner fa-spin"></i> Loading news...
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 30px;">
+                    <a href="#news" onclick="showPage('news')" class="btn btn-secondary">
+                        View All News <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery -->
+        <section class="image-gallery">
+            <div class="container">
+                <h2 class="gallery-title">Life at Our Church</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Worship Service">
+                        <div class="gallery-caption">
+                            <h3>Worship Services</h3>
+                            <p>Joyful praise and worship every Sunday</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Worship Service">
+                        <div class="gallery-caption">
+                            <h3>Worship Services</h3>
+                            <p>Joyful praise and worship every Sunday</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="IMAGES/christmas.jpg" alt="Community Fellowship">
+                        <div class="gallery-caption">
+                            <h3>Community Fellowship</h3>
+                            <p>Building relationships that last</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Children's Ministry">
+                        <div class="gallery-caption">
+                            <h3>Children's Ministry</h3>
+                            <p>Fun and faith-filled activities for kids</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Welcome Section -->
+        <section id="welcome" class="section">
+            <div class="container">
+                <div class="welcome-grid">
+                    <div class="welcome-text">
+                        <h2>You're Welcome Here</h2>
+                        <p>At Ruach Marshallese Full Gospel Church, we believe in creating a space where people can have authentic encounters with Christ, discover their gifts, and use them for God's glory.</p>
+                        <p>Whether you're new to faith or have been following Jesus for years, there's a place for you here. Come as you are and experience God's love and grace.</p>
+                        <a href="#about" onclick="showPage('about')" class="btn btn-secondary">Learn Our Story</a>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="https://images.unsplash.com/photo-1518834103328-4dbb0d8400de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Church community gathering">
+                    </div>
+                </div>
+
+                <!-- Image Features -->
+                <div class="image-features">
+                    <div class="image-feature">
+                        <img src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bible Study">
+                        <h3>Bible Study</h3>
+                        <p>Deep dive into God's Word with our study groups</p>
+                    </div>
+                    <div class="image-feature">
+                        <img src="https://images.unsplash.com/photo-1566457145005-2d0c5e7c2d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Outreach">
+                        <h3>Community Outreach</h3>
+                        <p>Serving our local community with love</p>
+                    </div>
+                    <div class="image-feature">
+                        <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Youth Ministry">
+                        <h3>Youth Ministry</h3>
+                        <p>Dynamic programs for teens and young adults</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Times -->
+        <section id="service-times" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title">Join Us This Week</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sunday Service" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Sunday</h3>
+                        <p class="service-time">3:00 PM</p>
+                        <p>Inspirational worship and relevant Bible teaching</p>
+                        <p class="service-location">Main Sanctuary</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bible Study" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-bible"></i>
+                        </div>
+                        <h3>Wednesday Night</h3>
+                        <p class="service-time">7:00 PM</p>
+                        <p>Bible Study & Prayer Meeting</p>
+                        <p class="service-location">Fellowship Hall</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="IMAGES/IMG_4073.JPG" alt="Youth Service" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Thursday Night</h3>
+                        <p class="service-time"> Youth Service 6:00 PM</p>
+                        <p></p>
+                        <p class="service-location">Women</p>
+                    </div>
+                    <div class="service-card">
+                        <img src="IMAGES/IMG_4073.JPG" alt="Youth Service" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Saturday Morning</h3>
+                        <p class="service-time"> Men Service </p>
+                        <p>High-energy worship and relevant teaching for teens</p>
+                        
+                    </div>
+                    
+                    <div class="service-card">
+                        <img src="IMAGES/IMG_4073.JPG" alt="Youth Service" class="service-image">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Friday Night</h3>
+                        <p class="service-time"> Youth Service 6:00 PM</p>
+                        <p>High-energy worship and relevant teaching for teens</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastor's Message -->
+        <section class="pastor-message">
+            <div class="container">
+                <h2>A Message From Our Pastor</h2>
+                <p class="quote">"At Ruach Marshallese Full Gospel Church, we are more than just a congregation - we are a family. Our doors are open wide to everyone seeking hope, purpose, and a deeper relationship with God. Come join us on this journey of faith."</p>
+                <div class="pastor-info">
+                    <img src="IMAGES/rikaki.jpg" alt="Senior Pastor" class="pastor-photo">
+                    <div>
+                        <h4>Pastor Tappero Sawej</h4>
+                        <p>Senior Pastor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upcoming Events -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-preview">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">31</span>
+                            <span class="month">DEC</span>
+                        </div>
+                        <div class="event-details">
+                            <h3>Watchnight Service</h3>
+                            <p class="service-time">December 31, 2025 | 7:00 PM - 12:00 AM</p>
+                            <p>Join us as we pray in the New Year with worship, testimonies, and prayer.</p>
+                            <a href="#events" onclick="showPage('events')" style="color: #3498db; font-weight: 600;">Learn More →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#events" onclick="showPage('events')" class="btn btn-secondary">View All Events</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== ABOUT PAGE ===== -->
+    <div id="about" class="page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>About Our Church</h1>
+                <p>Our mission, vision, and leadership</p>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section class="section">
+            <div class="container">
+                <div class="welcome-grid">
+                    <div class="welcome-text">
+                        <h2>Our Story</h2>
+                        <blockquote style="font-style: italic; border-left: 4px solid #3498db; padding-left: 20px; margin: 20px 0;">
+                            "For where two or three gather in my name, there am I with them." 
+                            <cite style="display: block; margin-top: 10px; font-weight: bold;">Matthew 18:20</cite>
+                        </blockquote>
+                    </div>
+                    <div class="welcome-image">
+                        <img src="IMAGES/fullgospel copy.jpeg" alt="Church history">
+                    </div>  
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-cross"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To make disciples of Jesus Christ who love God, love people, and serve the world.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To be a church that transforms our community through the power of the Gospel.</p>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Our Values</h3>
+                        <p>Worship, Community, Service, Generosity, and Excellence in all we do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Leadership</h2>
+                <div class="leadership-grid">
+                    <div class="leader-card">
+                        <img src="IMAGES/rikaki.jpg" alt="Pastor Tappero">
+                        <h3>Tappero Sawej</h3>
+                        <p class="leader-role">Senior Pastor</p>
+                        <p>Leading our church with passion and dedication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== MINISTRIES PAGE ===== -->
+    <div id="ministries" class="page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Our Ministries</h1>
+                <p>Serving every age and stage of life</p>
+            </div>
+        </section>
+
+        <!-- Ministries Grid -->
+        <section class="section">
+            <div class="container">
+                <div class="ministries-grid">
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Children's Ministry" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h3>Children's Ministry</h3>
+                        <p><strong>Sundays during service | Ages 0-11</strong></p>
+                        <p>Fun, safe environment where kids learn about Jesus through games, music, and Bible stories.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Youth Ministry" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Youth Ministry</h3>
+                        <p><strong>Fridays 7:00 PM | Ages 13-30</strong></p>
+                        <p>Dynamic gatherings with worship, relevant teaching, and authentic community for teens.</p>
+                        <p>Community for college students and young professionals navigating faith and life.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1518834103328-4dbb0d8400de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Young Adults" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Men Ministry</h3>
+                        <p><strong>1st & 3rd Tuesdays | Ages 18-30</strong></p>
+                        <p>Community for college students and young professionals navigating faith and life.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1518834103328-4dbb0d8400de?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Young Adults" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Women Ministry</h3>
+                        <p><strong>1st & 3rd Tuesdays | Ages 18-30</strong></p>
+                        <p>Community for college students and young professionals navigating faith and life.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1566457145005-2d0c5e7c2d66?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Outreach" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Outreach</h3>
+                        <p><strong>Monthly service projects</strong></p>
+                        <p>Sharing God's love through practical service in our local community and beyond.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Worship Arts" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <h3>Worship</h3>
+                        <p><strong>Weekly rehearsals</strong></p>
+                        <p>Using creative gifts to lead the church in worship through music and arts.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                    
+                    <div class="ministry-card">
+                        <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Prayer Ministry" class="ministry-image">
+                        <div class="ministry-icon">
+                            <i class="fas fa-hands-praying"></i>
+                        </div>
+                        <h3>Prayer Ministry</h3>
+                        <p><strong>24/7 Prayer Chain</strong></p>
+                        <p>Dedicated to covering our church and community in prayer. Join our prayer team.</p>
+                        <a href="#contact" onclick="showPage('contact')" class="btn btn-small btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== EVENTS PAGE ===== -->
+    <div id="events" class="page-content">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Upcoming Events</h1>
+                <p>Join us for worship, fellowship, and service</p>
+            </div>
+        </section>
+
+        <!-- Events Calendar -->
+        <section class="section">
+            <div class="container">
+                <div class="events-preview">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">DEC</span>
+                        </div>
+                        <div class="event-details">
+                            <h2>Christmas Celebration</h2>
+                            <p class="service-time">December 25, 2025 | 7:00 PM</p>
+                            <p class="service-location">Main Sanctuary</p>
+                            <p>Join us for our annual Christmas celebration featuring our choir and special guest musicians. This family-friendly event includes traditional carols, contemporary Christmas music, and a special message of hope.</p>
+                            <div style="margin-top: 20px;">
+                                <a href="https://calendar.google.com/calendar" class="btn btn-outline" style="color: #333; border-color: #333; margin-left: 10px;">Add to Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">31</span>
+                            <span class="month">DEC</span>
+                        </div>
+                        <div class="event-details">
+                            <h2>Watchnight Service</h2>
+                            <p class="service-time">December 31, 2025 | 7:00 PM - 12:00 AM</p>
+                            <p class="service-location">Fellowship Hall</p>
+                            <p>Start the new year right with our annual prayer service. Join us for worship, testimonies, and prayer as we welcome the new year.</p>
+                            <div style="margin-top: 20px;">
+                                <a href="https://calendar.google.com/calendar" class="btn btn-outline" style="color: #333; border-color: #333; margin-left: 10px;">Add to Calendar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- ===== CONTACT PAGE ===== -->
+<div id="contact" class="page-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get In Touch</h2>
+                    <p>Have questions? Need prayer? Want to get involved? We're here to help.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Our Location</h3>
+                                <p>2274 Smith Hill Rd<br>Litha Spring, GA 30122</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone Number</h3>
+                                <p>470 542 6771</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>ruachfullgospelchurch@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3></h3>
+                                <p>24-7 </p> <br>Monday to Sunday </br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send Us a Message</h3>
+                    
+                    <!-- Formspree Form -->
+                    <form id="church-contact-form" action="https://formspree.io/f/mrebqwdb" method="POST">
+                        <div class="form-group">
+                            <label for="full-name">Full Name *</label>
+                            <input type="text" id="full-name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="prayer">Prayer Request</option>
+                                <option value="visit">Planning a Visit</option>
+                                <option value="ministry">Ministry Involvement</option>
+                                <option value="giving">Tithing & Giving</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <span id="submit-text">Send Message</span>
+                        </button>
+                        
+                        <p id="form-status" class="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== RESOURCES PAGE ===== -->
+<!-- ===== RESOURCES PAGE ===== -->
+<div id="resources" class="page-content">
+    <section class="page-header">
+        <div class="container">
+            <h1>Church Resources</h1>
+            <p>Download sermon notes, forms, and access upload section</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Admin Controls -->
+            <div id="adminControls" style="display: none; margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #e8f4fc; border-radius: 8px;">
+                    <div>
+                        <h3 style="margin: 0;">👑 Admin Mode</h3>
+                        <p style="margin: 5px 0 0 0; color: #7f8c8d;">You have upload permissions</p>
+                    </div>
+                    <button id="adminLogoutBtn" class="btn btn-outline" style="color: #e74c3c; border-color: #e74c3c;">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>
+                </div>
+            </div>
+
+            <!-- Public Message -->
+            <div id="publicMessage" style="text-align: center; margin: 40px 0;">
+                <div style="max-width: 600px; margin: 0 auto; padding: 30px; background: #f8f9fa; border-radius: 10px;">
+                    <i class="fas fa-lock" style="font-size: 48px; color: #3498db; margin-bottom: 20px;"></i>
+                    <h3>File Upload Access</h3>
+                    <p>Uploading files to the church directory requires admin privileges.</p>
+                    <p>Need to upload something? Contact the church office or an authorized staff member.</p>
+                    <button id="requestAccessBtn" class="btn btn-secondary" style="margin-top: 15px;">
+                        <i class="fas fa-envelope"></i> Request Upload Access
+                    </button>
+                    <p style="margin-top: 10px; font-size: 0.9em; color: #7f8c8d;">
+                        Current visitors can still <strong>download</strong> files below.
+                    </p>
+                </div>
+            </div>
+
+            <div class="resources-grid">
+                <!-- UPLOAD SECTION (Hidden by default, shown for admins only) -->
+                <div class="upload-section" id="uploadSection" style="display: none;">
+                    <h2><i class="fas fa-cloud-upload-alt"></i> Admin File Upload</h2>
+                    <p>Upload sermon notes, event photos, or church documents.</p>
+                    
+                    <div class="upload-box" id="uploadBox">
+                        <div class="upload-area" id="dropArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <h3>Drag & Drop Files Here</h3>
+                            <p>or click to browse</p>
+                            <input type="file" id="fileInput" multiple accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.mp3,.mp4">
+                            <p class="file-types">Supported: PDF, DOC, JPG, PNG, MP3, MP4 (Max: 10MB)</p>
+                        </div>
+                        
+                        <div class="upload-details" id="uploadDetails" style="display: none;">
+                            <h4>Selected Files:</h4>
+                            <div id="fileList"></div>
+                            
+                            <div class="upload-options">
+                                <div class="form-group">
+                                    <label for="fileCategory">Category:</label>
+                                    <select id="fileCategory">
+                                        <option value="sermon">Sermon Notes</option>
+                                        <option value="event">Event Photos</option>
+                                        <option value="form">Forms/Documents</option>
+                                        <option value="music">Worship Music</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="fileDescription">Description (optional):</label>
+                                    <textarea id="fileDescription" placeholder="Brief description of the file..."></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="uploadVisibility">Visibility:</label>
+                                    <select id="uploadVisibility">
+                                        <option value="public">Public (Everyone can download)</option>
+                                        <option value="members">Church Members Only</option>
+                                        <option value="staff">Staff Only</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="upload-actions">
+                                <button id="cancelUpload" class="btn btn-outline">Cancel</button>
+                                <button id="uploadButton" class="btn btn-primary">
+                                    <span id="uploadText"><i class="fas fa-upload"></i> Upload Files</span>
+                                    <span id="uploadLoading" style="display: none;">
+                                        <i class="fas fa-spinner fa-spin"></i> Uploading...
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="uploadProgress" class="upload-progress" style="display: none;">
+                        <h4>Upload Progress:</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <p id="progressText">0%</p>
+                    </div>
+                    
+                    <div id="uploadResult" class="upload-result"></div>
+                </div>
+                
+                <!-- DOWNLOAD SECTION (Always visible) -->
+                <div class="download-section">
+                    <h2><i class="fas fa-cloud-download-alt"></i> Download Resources</h2>
+                    <p>Access sermon notes, forms, and other church resources.</p>
+                    
+                    <div class="search-box">
+                        <input type="text" id="searchFiles" placeholder="Search files...">
+                        <select id="filterCategory">
+                            <option value="">All Categories</option>
+                            <option value="sermon">Sermon Notes</option>
+                            <option value="event">Event Photos</option>
+                            <option value="form">Forms/Documents</option>
+                            <option value="music">Worship Music</option>
+                        </select>
+                    </div>
+                    
+                    <div class="files-grid" id="filesGrid">
+                        <!-- Files will be loaded here -->
+                        <div class="loading-files">
+                            <i class="fas fa-spinner fa-spin"></i> Loading files...
+                        </div>
+                    </div>
+                    
+                    <div class="storage-info">
+                        <p><i class="fas fa-database"></i> 
+                            <span id="storageUsed">0 MB</span> used of 
+                            <span id="storageTotal">50 MB</span> available
+                        </p>
+                        <div class="storage-bar">
+                            <div class="storage-fill" id="storageFill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== NEWS PAGE ===== -->
+<div id="news" class="page-content">
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Church News & Updates</h1>
+            <p>Stay informed about what's happening at Ruach Church</p>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Admin Controls (Visible only to admins) -->
+            <div id="newsAdminControls" style="display: none; margin-bottom: 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 15px; background: #e8f4fc; border-radius: 8px;">
+                    <div>
+                        <h3 style="margin: 0;"><i class="fas fa-newspaper"></i> News Management</h3>
+                        <p style="margin: 5px 0 0 0; color: #7f8c8d;">Add, edit, or delete news articles</p>
+                    </div>
+                    <button id="addNewsBtn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add News Article
+                    </button>
+                </div>
+            </div>
+
+            <!-- News Categories -->
+            <div class="news-categories">
+                <button class="news-category active" data-category="all">All News</button>
+                <button class="news-category" data-category="announcements">Announcements</button>
+                <button class="news-category" data-category="events">Events</button>
+                <button class="news-category" data-category="ministries">Ministries</button>
+                <button class="news-category" data-category="testimonies">Testimonies</button>
+                <button class="news-category" data-category="general">General</button>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-bar" style="margin: 30px 0;">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="newsSearch" placeholder="Search news articles...">
+                    <select id="newsSort">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="popular">Most Viewed</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid" id="newsGrid">
+                <!-- News articles will be loaded here -->
+                <div class="loading-news">
+                    <i class="fas fa-spinner fa-spin"></i> Loading news...
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="newsPagination" style="display: none;">
+                <button class="page-btn prev-btn" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <div class="page-numbers" id="pageNumbers"></div>
+                <button class="page-btn next-btn">
+                    Next <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="newsletter-section" style="margin-top: 60px; padding: 40px; background: linear-gradient(135deg, #3498db, #2ecc71); color: white; border-radius: 15px;">
+                <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: white;">Stay Updated</h2>
+                    <p>Subscribe to our newsletter to receive weekly updates, event reminders, and spiritual encouragement.</p>
+                    <form id="newsletterForm" style="margin-top: 30px;">
+                        <div style="display: flex; gap: 10px; max-width: 500px; margin: 0 auto;">
+                            <input type="email" placeholder="Your email address" required style="flex: 1; padding: 15px; border: none; border-radius: 8px;">
+                            <button type="submit" class="btn btn-light">
+                                <i class="fas fa-paper-plane"></i> Subscribe
+                            </button>
+                        </div>
+                        <p style="margin-top: 15px; font-size: 0.9em; opacity: 0.8;">
+                            <i class="fas fa-lock"></i> We respect your privacy. Unsubscribe at any time.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ===== NEWS MODAL (For Adding/Editing) ===== -->
+<div id="newsModal" class="modal">
+    <div class="modal-content" style="max-width: 800px;">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalTitle">Add News Article</h2>
+        
+        <form id="newsForm">
+            <div class="form-group">
+                <label>Title *</label>
+                <input type="text" id="newsTitle" required placeholder="Enter news title">
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Category *</label>
+                    <select id="newsCategory" required>
+                        <option value="">Select category</option>
+                        <option value="announcements">Announcements</option>
+                        <option value="events">Events</option>
+                        <option value="ministries">Ministries</option>
+                        <option value="testimonies">Testimonies</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Featured Image</label>
+                    <input type="file" id="newsImage" accept=".jpg,.jpeg,.png,.webp">
+                    <div id="imagePreview" style="margin-top: 10px; display: none;">
+                        <img id="previewImg" src="" alt="Preview" style="max-width: 200px; border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>Content *</label>
+                <div id="newsEditor" style="min-height: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 15px; background: white;">
+                    <!-- Simple WYSIWYG toolbar -->
+                    <div class="editor-toolbar">
+                        <button type="button" class="format-btn" data-format="bold"><i class="fas fa-bold"></i></button>
+                        <button type="button" class="format-btn" data-format="italic"><i class="fas fa-italic"></i></button>
+                        <button type="button" class="format-btn" data-format="underline"><i class="fas fa-underline"></i></button>
+                        <button type="button" class="format-btn" data-format="link"><i class="fas fa-link"></i></button>
+                        <button type="button" class="format-btn" data-format="list"><i class="fas fa-list-ul"></i></button>
+                    </div>
+                    <div class="editor-content" contenteditable="true" id="newsContent" style="min-height: 250px; margin-top: 10px; outline: none;"></div>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Author</label>
+                    <input type="text" id="newsAuthor" placeholder="Article author">
+                </div>
+                <div class="form-group">
+                    <label>Tags (comma separated)</label>
+                    <input type="text" id="newsTags" placeholder="faith, church, community">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="newsFeatured"> Feature this article on homepage
+                </label>
+                <label style="margin-left: 20px;">
+                    <input type="checkbox" id="newsPublished" checked> Publish immediately
+                </label>
+            </div>
+            
+            <div class="form-actions" style="display: flex; gap: 15px; margin-top: 30px;">
+                <button type="button" class="btn btn-outline" id="cancelNewsBtn">Cancel</button>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-save"></i> Save Article
+                </button>
+            </div>
+            
+            <input type="hidden" id="newsId" value="">
+        </form>
+    </div>
+</div>
+
+<!-- ===== NEWS DETAIL MODAL ===== -->
+<div id="newsDetailModal" class="modal">
+    <div class="modal-content" style="max-width: 900px;">
+        <span class="close-modal">&times;</span>
+        <div id="newsDetailContent">
+            <!-- News details will be loaded here -->
+        </div>
+    </div>
+</div>
+
+    <!-- ===== ADMIN LOGIN MODAL ===== -->
+<div id="adminLoginModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>🔐 Admin Login</h2>
+        <p>Church staff only. Please login to access upload features.</p>
+        
+        <form id="adminLoginForm">
+            <div class="form-group">
+                <label for="adminUsername">Username</label>
+                <input type="text" id="adminUsername" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="adminPassword">Password</label>
+                <input type="password" id="adminPassword" required>
+            </div>
+            
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="rememberMe"> Remember me
+                </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+            
+            <div id="adminLoginError" style="color: #e74c3c; margin-top: 10px;"></div>
+        </form>
+    </div>
+</div>
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <i class="fas fa-church"></i>
+                        <span>Ruach Marshallese Full Gospel Church</span>
+                    </div>
+                    <p>2274 Smith Hill Rd.<br>Litha Spring<br>GA 30122</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" onclick="showPage('home')">Home</a></li>
+                        <li><a href="#about" onclick="showPage('about')">About Us</a></li>
+                        <li><a href="#ministries" onclick="showPage('ministries')">Ministries</a></li>
+                        <li><a href="#events" onclick="showPage('events')">Events</a></li>
+                        <li><a href="#contact" onclick="showPage('contact')">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Service Times</h4>
+                    <ul>
+                        <li>Sunday: 3:00 PM</li>
+                        <li>Wednesday: 6:00 PM</li>
+                        <li>Friday Youth: 6:00 PM</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ruach Marshallese Full Gospel Church. All rights reserved.</p>
+            </div>
+        </div>
+        
+    </footer>
+    <!-- ===== ADMIN PANEL (Floating Button & Modal) ===== -->
+<div id="adminPanel" style="display: none;">
+    <!-- Floating Admin Button -->
+    <button id="adminPanelBtn" class="admin-float-btn">
+        <i class="fas fa-cog"></i> Admin
+    </button>
+    
+    <!-- Admin Panel Modal -->
+    <div id="adminPanelModal" class="admin-modal">
+        <div class="admin-modal-content">
+            <div class="admin-modal-header">
+                <h3><i class="fas fa-user-shield"></i> Admin Control Panel</h3>
+                <span class="admin-close-modal">&times;</span>
+            </div>
+            
+            <div class="admin-modal-body">
+                <!-- Tabs Navigation -->
+                <div class="admin-tabs">
+                    <button class="admin-tab active" data-tab="pages">📄 Edit Pages</button>
+                    <button class="admin-tab" data-tab="content">✏️ Edit Content</button>
+                    <button class="admin-tab" data-tab="images">🖼️ Manage Images</button>
+                    <button class="admin-tab" data-tab="events">📅 Manage Events</button>
+                    <button class="admin-tab" data-tab="users">👥 Manage Users</button>
+                </div>
+                
+                <!-- Pages Tab -->
+                <div id="pages-tab" class="admin-tab-content active">
+                    <h4>Edit Page Content</h4>
+                    <div class="form-group">
+                        <label>Select Page:</label>
+                        <select id="pageSelector" class="form-control">
+                            <option value="home">🏠 Home Page</option>
+                            <option value="about">📖 About Page</option>
+                            <option value="ministries">🙏 Ministries Page</option>
+                            <option value="events">📅 Events Page</option>
+                            <option value="contact">📞 Contact Page</option>
+                        </select>
+                    </div>
+                    
+                    <div id="pageEditor">
+                        <!-- Content will be loaded here -->
+                        <p>Select a page to edit its content</p>
+                    </div>
+                </div>
+                
+                <!-- Content Tab -->
+                <div id="content-tab" class="admin-tab-content">
+                    <h4>Edit Text Content</h4>
+                    <div class="form-group">
+                        <label>Section to Edit:</label>
+                        <select id="contentSelector" class="form-control">
+                            <option value="">Select a section...</option>
+                            <option value="hero_title">Hero Title</option>
+                            <option value="hero_subtitle">Hero Subtitle</option>
+                            <option value="welcome_text">Welcome Text</option>
+                            <option value="pastor_message">Pastor's Message</option>
+                            <option value="mission">Mission Statement</option>
+                            <option value="vision">Vision Statement</option>
+                            <option value="values">Values</option>
+                            <option value="service_times">Service Times</option>
+                            <option value="contact_info">Contact Information</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Content:</label>
+                        <textarea id="contentEditor" class="form-control" rows="6" placeholder="Enter content..."></textarea>
+                    </div>
+                    
+                    <button id="saveContentBtn" class="btn btn-primary">
+                        <i class="fas fa-save"></i> Save Changes
+                    </button>
+                </div>
+                
+                <!-- Images Tab -->
+                <div id="images-tab" class="admin-tab-content">
+                    <h4>Manage Website Images</h4>
+                    
+                    <div class="image-upload-section">
+                        <h5>Upload New Image</h5>
+                        <div class="upload-area" id="imageUploadArea">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Drag & drop images or click to browse</p>
+                            <input type="file" id="imageUploadInput" accept=".jpg,.jpeg,.png,.gif,.webp" multiple>
+                            <p class="file-info">Max size: 5MB per image</p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Image Category:</label>
+                            <select id="imageCategory" class="form-control">
+                                <option value="gallery">Gallery</option>
+                                <option value="hero">Hero/Banner</option>
+                                <option value="pastor">Pastor/Staff</option>
+                                <option value="event">Events</option>
+                                <option value="ministry">Ministries</option>
+                                <option value="general">General</option>
+                            </select>
+                        </div>
+                        
+                        <div id="imagePreview" style="display: none;">
+                            <h5>Preview:</h5>
+                            <div id="previewContainer"></div>
+                        </div>
+                        
+                        <button id="uploadImagesBtn" class="btn btn-primary" disabled>
+                            <i class="fas fa-upload"></i> Upload Images
+                        </button>
+                    </div>
+                    
+                    <div class="existing-images">
+                        <h5>Existing Images</h5>
+                        <div id="imagesGrid" class="images-grid">
+                            <!-- Images will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Events Tab -->
+                <div id="events-tab" class="admin-tab-content">
+                    <h4>Manage Events</h4>
+                    
+                    <div class="form-section">
+                        <h5>Add New Event</h5>
+                        <div class="form-group">
+                            <label>Event Title:</label>
+                            <input type="text" id="eventTitle" class="form-control" placeholder="Christmas Celebration">
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date:</label>
+                                <input type="date" id="eventDate" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label>Time:</label>
+                                <input type="time" id="eventTime" class="form-control">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Location:</label>
+                            <input type="text" id="eventLocation" class="form-control" placeholder="Main Sanctuary">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea id="eventDescription" class="form-control" rows="4" placeholder="Event details..."></textarea>
+                        </div>
+                        
+                        <button id="addEventBtn" class="btn btn-primary">
+                            <i class="fas fa-calendar-plus"></i> Add Event
+                        </button>
+                    </div>
+                    
+                    <div class="events-list">
+                        <h5>Upcoming Events</h5>
+                        <div id="eventsList">
+                            <!-- Events will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Users Tab -->
+                <div id="users-tab" class="admin-tab-content">
+                    <h4>Manage Users</h4>
+                    
+                    <div class="form-section">
+                        <h5>Add New User</h5>
+                        <div class="form-group">
+                            <label>Username:</label>
+                            <input type="text" id="newUsername" class="form-control" placeholder="username">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" id="newEmail" class="form-control" placeholder="user@church.org">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Password:</label>
+                            <input type="password" id="newPassword" class="form-control" placeholder="password">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Role:</label>
+                            <select id="newUserRole" class="form-control">
+                                <option value="member">Member</option>
+                                <option value="staff">Staff</option>
+                                <option value="pastor">Pastor</option>
+                                <option value="admin">Admin</option>
+                            </select>
+                        </div>
+                        
+                        <button id="addUserBtn" class="btn btn-primary">
+                            <i class="fas fa-user-plus"></i> Add User
+                        </button>
+                    </div>
+                    
+                    <div class="users-list">
+                        <h5>Existing Users</h5>
+                        <div id="usersTable">
+                            <!-- Users will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="admin-modal-footer">
+                <button id="adminLogoutBtn" class="btn btn-outline">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+                <button id="saveAllBtn" class="btn btn-success">
+                    <i class="fas fa-save"></i> Save All Changes
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Image Preview Modal -->
+<div id="imagePreviewModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img id="previewImage" src="" alt="Preview">
+        <div class="image-actions">
+            <button id="setAsHero" class="btn btn-primary">
+                <i class="fas fa-star"></i> Set as Hero Image
+            </button>
+            <button id="deleteImage" class="btn btn-danger">
+                <i class="fas fa-trash"></i> Delete
+            </button>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</html>
