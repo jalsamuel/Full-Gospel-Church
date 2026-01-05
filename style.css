@@ -482,7 +482,7 @@ body > header > div > nav > div {
 /* ===== HERO SECTION ===== */
 .hero {
     background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.8)), 
-                url('IMAGES/fullgospel copy.jpeg');
+                url('./fullgospel copy.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
